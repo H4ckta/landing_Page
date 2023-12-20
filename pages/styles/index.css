@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  background-color: #191919;
+
+  /* opacity: 1;
+  background-color: #191919;
+  opacity: 1;
+  background-image:  linear-gradient(#EF1A67 4px, transparent 4px), linear-gradient(to right, #EF1A67 4px, #191919 4px);
+  background-size: 80px 80px; */
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0);
+  /* Adiciona uma sombra suave */
+  background-color: #ffffff00;
+}
+
+.card img {
+  font-size: 250px;
+  color: #191919;
+}
+
+.card h3 {
+  margin-top: 10px;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.card hr {
+  border: 2px solid #000000;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0);
+  /* Adiciona uma sombra suave */
+}
+
+
+/* 
+.navbar-nav{
+  gap: 50px;
+}
+
+.nav-item {
+padding: 10px;
+border: 1px solid #191919;
+}
+
+.nav-item a{
+padding: 10px;
+color: #FFF;
+
+}
+
+.nav-item:hover {
+background-color: #191919;
+border: 1px solid #FFF;
+}
+
+
+.nav-item a:hover {
+color: #FFF;
+text-decoration: none;
+} */
+
+
+
+.containerImgs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgTotal {
+  flex-direction: column;
+  gap: 50px;
+
+  /* opacity: 1;
+  background-color: #191919;
+  opacity: 1;
+  background-image:  linear-gradient(#EF1A67 4px, transparent 4px), linear-gradient(to right, #EF1A67 4px, #191919 4px);
+  background-size: 80px 80px;
+  width: 100%; */
+}
+
+.img1,
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.img2 {
+  flex-direction: row-reverse;
+}
+
+
+.TituloTexto {
+  flex-direction: column;
+}
+
+.TituloTexto p {
+  margin-top: 10px;
+}
+
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 40vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+
+}
+
+.context h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+.area {
+  /* background: #024592;   */
+  background-image: linear-gradient(to right bottom, #191919, #151515, #0f0f0f, #080808, #000000);
+  width: 100%;
+  height: 70vh;
+}
+
+
+.circles {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #EF1A67;
+  animation: animate 25s linear infinite;
+  bottom: -250px;
+
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  60% {
+    transform: translateY(-700px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.homet,
+.feedt,
+.logint {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+
+  color: #FFF;
+}
+
+.feedt {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.homet:hover,
+.feedt:hover,
+.logint:hover {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+
+  background-color: #191919;
+}
+
+.suporte,
+.cdc,
+.codigos {
+  color: #EF1A67;
+  /* border-bottom: 2px solid #EF1A67; */
+}
+
+.hr {
+  border-bottom: 2px solid #EF1A67;
+  width: 150px;
+}
+
+.hrCaixa {
+  width: 340px;
+  border-bottom: 2px solid #EF1A67;
+}
+
+b {
+  color: #EF1A67;
+}
+
+.containerP {
+  color: #FFF;
+  width: 400px;
+  font-size: 17px;
+}
+
+.footer {
+  background-image: linear-gradient(to right bottom, #191919, #151515, #0f0f0f, #080808, #000000);
+  color: #fff;
+  padding: 50px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.footer-heading {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-text {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* Estilo de links no footer (opcional) */
+.footer-text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-text a:hover {
+  color: #ffca28;
+}
+
+/* Definir o fundo da barra de navegação */
+
+
+/* Estilos para telas de tamanho médio, como celulares */
+@media only screen and (max-width: 991px) {
+  /* Insira aqui os estilos que deseja aplicar para telas de celular */
+  /* Por exemplo: */
+
+
+
+  .home {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #191919;
+  }
+
+  .nav-item:hover {
+    background-color: #191919;
+  }
+
+  .nav-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+  }
+
+  .nav-item a:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+
+  .context {
+    top: 40vh;
+    flex-wrap: wrap;
+  }
+
+  .context img {
+    display: none;
+  }
+
+
+  .img1,
+  .img2 {
+    flex-wrap: wrap;
+
+  }
+
+  .img1 img,
+  .img2 img {
+    height: 300px;
+  }
+
+  .homet,
+  .feedt,
+  .logint {
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .feedt {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .homet:hover,
+  .feedt:hover,
+  .logint:hover {
+    padding: 0px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    /* Adiciona uma sombra suave */
+    background-color: #ffffff00;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .card i {
+    color: #ffffff;
+  }
+
+  .TituloTexto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .wave {
+    height: 120px;
+    width: 100%;
+  }
+
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* Insira aqui os estilos que deseja aplicar para telas de celular */
+  /* Por exemplo: */
+
+  * {
+    overflow-x: hidden;
+  }
+
+  .home {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #191919;
+  }
+
+  .nav-item:hover {
+    background-color: #191919;
+  }
+
+  .nav-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+  }
+
+  .nav-item a:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+
+  .context {
+    top: 38vh;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .context img {
+    display: none;
+  }
+
+  .CHECKLIST {
+    margin-top: 13px;
+    padding: 0px 70px;
+  }
+
+
+  .img1,
+  .img2 {
+    flex-wrap: wrap;
+
+  }
+
+  .img1 img,
+  .img2 img {
+    height: 300px;
+  }
+
+  .homet,
+  .feedt,
+  .logint {
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .feedt {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .homet:hover,
+  .feedt:hover,
+  .logint:hover {
+    padding: 0px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .TituloTexto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+
+
+
+
+  .suporte,
+  .cdc,
+  .codigos {
+    color: #EF1A67;
+    color: #bd0447;
+    color: #8a0032;
+    /* border-bottom: 2px solid #EF1A67; */
+  }
+
+  .hr {
+    border-bottom: 2px solid #EF1A67;
+    width: 150px;
+  }
+
+  .hrCaixa {
+    width: 340px;
+    border-bottom: 2px solid #EF1A67;
+  }
+
+  b {
+    color: #EF1A67;
+  }
+
+  .containerP {
+    color: #FFF;
+    width: 300px;
+    font-size: 17px;
+  }
+
+  .wave {
+    height: 120px;
+  }
+
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  /* Insira aqui os estilos que deseja aplicar para telas de celular */
+  /* Por exemplo: */
+
+
+  .home {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #191919;
+  }
+
+  .nav-item:hover {
+    background-color: #191919;
+  }
+
+  .nav-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+  }
+
+  .nav-item a:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+
+  .context {
+    top: 42vh;
+    flex-wrap: wrap;
+  }
+
+  .context img {
+    display: none;
+  }
+
+  .CHECKLIST {
+    margin-top: 13px;
+    padding: 0px 10px;
+  }
+
+
+  .img1,
+  .img2 {
+    flex-wrap: wrap;
+
+  }
+
+  .img1 img,
+  .img2 img {
+    height: 300px;
+  }
+
+  .homet,
+  .feedt,
+  .logint {
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .feedt {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .homet:hover,
+  .feedt:hover,
+  .logint:hover {
+    padding: 0px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .TituloTexto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .wave {
+    height: 120px;
+  }
+
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

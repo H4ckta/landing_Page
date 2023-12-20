@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  background-color: #191919;
+
+  /* opacity: 1;
+  background-color: #191919;
+  opacity: 1;
+  background-image:  linear-gradient(#EF1A67 4px, transparent 4px), linear-gradient(to right, #EF1A67 4px, #191919 4px);
+  background-size: 80px 80px; */
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.homet,
+.feedt,
+.logint {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+
+  color: #FFF;
+}
+
+.feedt {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.homet:hover,
+.feedt:hover,
+.logint:hover {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+
+  background-color: #191919;
+}
+
+
+/* Definir o fundo da barra de navegação */
+
+
+/* Estilos para telas de tamanho médio, como celulares */
+@media only screen and (max-width: 991px) {
+  /* Insira aqui os estilos que deseja aplicar para telas de celular */
+  /* Por exemplo: */
+
+
+
+  .home {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #191919;
+  }
+
+  .nav-item:hover {
+    background-color: #191919;
+  }
+
+  .nav-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+  }
+
+  .nav-item a:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+
+  .img1,
+  .img2 {
+    flex-wrap: wrap;
+
+  }
+
+  .img1 img,
+  .img2 img {
+    height: 300px;
+  }
+
+  .homet,
+  .feedt,
+  .logint {
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .feedt {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .homet:hover,
+  .feedt:hover,
+  .logint:hover {
+    padding: 0px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* Insira aqui os estilos que deseja aplicar para telas de celular */
+  /* Por exemplo: */
+
+  * {
+    overflow-x: hidden;
+  }
+
+  .home {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #191919;
+  }
+
+  .nav-item:hover {
+    background-color: #191919;
+  }
+
+  .nav-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+  }
+
+  .nav-item a:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+
+  .img1,
+  .img2 {
+    flex-wrap: wrap;
+
+  }
+
+  .img1 img,
+  .img2 img {
+    height: 300px;
+  }
+
+  .homet,
+  .feedt,
+  .logint {
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .feedt {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .homet:hover,
+  .feedt:hover,
+  .logint:hover {
+    padding: 0px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 380px) {
+  /* Insira aqui os estilos que deseja aplicar para telas de celular */
+  /* Por exemplo: */
+
+
+  .home {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #191919;
+  }
+
+  .nav-item:hover {
+    background-color: #191919;
+  }
+
+  .nav-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+  }
+
+  .nav-item a:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+
+
+  .img1,
+  .img2 {
+    flex-wrap: wrap;
+
+  }
+
+  .img1 img,
+  .img2 img {
+    height: 300px;
+  }
+
+  .homet,
+  .feedt,
+  .logint {
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .feedt {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .homet:hover,
+  .feedt:hover,
+  .logint:hover {
+    padding: 0px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.card {
+width: 400px;
+height: 400px;
+margin: 20px;
+position: relative;
+overflow: hidden;
+box-shadow: 0 4px 90px #000000;
+transition: transform 0.3s ease-in-out;
+background-color: #000000;
+border: none;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card img {
+width: 100%;
+height: auto;
+display: block;
+background-image: linear-gradient(to right bottom, #191919, #151515, #0f0f0f, #080808, #000000);
+border: none;
+}
+
+.card-info {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #000000;
+color: #FFF;
+padding: 20px;
+box-sizing: border-box;
+transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-info {
+opacity: 1;
+}
+
+.card-info h3 {
+margin-top: 0;
+}
+
+.hidden {
+display: none;
+}
+
+.pcontatos{
+color: #EF1A67;
+font-weight: bold;
+border-bottom: 2px solid #EF1A67;
+}
+
+.bcontatos{
+background-color: #000000;
+border: none;
+color: #FFF;
+font-size: 20px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+cursor: pointer;
+gap: 10px;
+}
+
+.bcontatos:hover{
+  border-bottom: 4px solid #ffffff;
+}
+
+.bcontatos b{
+color: #EF1A67;
+}
+
+.bcontatos i{
+font-size: 40px;
+cursor: pointer;
+}
+
+.contato{
+color: #EF1A67;
+text-align: center;
+margin-top: 30px;
+border-bottom: 2px solid  #EF1A67;
+width: 660px;
+}
+
+.contatos{
+display: flex;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+}
+
+@keyframes floating {
+0% {
+  transform: translateY(0px);
+}
+50% {
+  transform: translateY(-7px);
+}
+100% {
+  transform: translateY(0px);
+}
+}
+
+.material-symbols-outlined {
+animation: floating 1s infinite ease-in-out;
+}
+
+
+/* Estilo do footer */
+.footer {
+background-image: linear-gradient(to right bottom, #191919, #151515, #0f0f0f, #080808, #000000);
+color: #fff;
+padding: 50px 0;
+font-family: Arial, sans-serif;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.footer-section {
+width: 30%;
+margin-bottom: 30px;
+}
+
+.footer-heading {
+font-size: 1.5em;
+margin-bottom: 15px;
+text-transform: uppercase;
+}
+
+.footer-text {
+font-size: 0.9em;
+line-height: 1.6;
+}
+
+/* Estilo de links no footer (opcional) */
+.footer-text a {
+color: #fff;
+text-decoration: underline;
+}
+
+.footer-text a:hover {
+color: #ffca28;
+}
+
+@media only screen and (max-width: 480px) {
+.contato{
+color: #EF1A67;
+text-align: center;
+margin-top: 30px;
+border-bottom: 2px solid  #EF1A67;
+width: 500px;
+display: none;
+}
+
+.contatos{
+display: flex;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+}
+
+
+.cards{
+flex-wrap: wrap;
+}
+
+.wave{
+height: 120px;
+}
+
+
+.footer-section {
+  width: 100%;
+  margin-bottom: 30px;
+
+}
+
+.material-symbols-outlined{
+  overflow: hidden;
+}
+}
